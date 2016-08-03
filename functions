@@ -101,3 +101,8 @@ show_admin_bar(false); полное отключение
       'flex-height'    => true,
     );
     add_theme_support( 'custom-header', $args );
+    
+ /**
+ * МЕНЮ
+ */
+ register_nav_menu('id меню', 'назва меню');
