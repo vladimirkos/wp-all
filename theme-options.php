@@ -24,8 +24,8 @@ function theme_options_add_page() {
  */
 $select_options = array(
 	'0' => array(
-		'value' =>	'0',
-		'label' => __( 'red', 'sampletheme' )
+		'value' =>	'red', // ТЕ ШО БУДЕ ПИДСТАВЛЯТИСЬ 
+		'label' => __( 'red', 'sampletheme' ) ТЕШО БУДЕ В МЕНЮ
 	),
 	'1' => array(
 		'value' =>	'1',
@@ -85,7 +85,7 @@ function theme_options_do_page() {
 			<?php settings_fields( 'sample_options' ); ?>
 			<?php $options = get_option( 'sample_theme_options' ); ?>
 
-			<table class="form-table">      //ТАБЛИЦА В КОТОРРОЙ НАХОДЯТСЯ НАСТРОЙКИ
+			<table class="form-table">      //ТАБЛИЦА В КОТОРРОЙ НАХОДЯТСЯ НАСТРОЙ
 
 				<?php
 				/**
