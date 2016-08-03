@@ -15,4 +15,28 @@
    
 
 4)МИНИАТЮРА Вивод imd
-<?php the_post_thumbnail(full); ?>
+   <?php the_post_thumbnail(full); ?>
+
+
+5)ПОСТ
+   а)Обичный
+   
+   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+   
+   <?php endwhile; else: ?>
+    код эсли постов нет
+   <?php endif; ?>
+   
+   б)Пост по категория(рубрикам)
+   
+   <?php if ( have_posts() ) : query_posts('category_name=ярлик');
+				while( have_posts() ) : the_post(); ?>
+					<!-- post-->
+					
+            <?php endwhile; ?>
+                <!--  post-navigation-->
+            <?php else: ?>
+            <!--post-faund-->
+            код которы будет отображатся если посмтов нет
+            <?php endif; ?>
+   
