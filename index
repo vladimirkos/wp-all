@@ -11,4 +11,5 @@
    <?php echo get_cat_description( id ) ?>
    
    <?php $idObj = get_category_by_slug('ярлик рубрики'); $id = $idObj->term_id; echo get_cat_name($id) ?> больее правильно
+   <?php $idObj = get_category_by_slug('ярлик рубрики'); $id = $idObj->term_id; echo get_cat_description($id) ?> больее правильно
    
