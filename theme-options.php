@@ -1,20 +1,22 @@
 <?php
 
+
+//ОБЯЗАТЕЛЬНО
 add_action( 'admin_init', 'theme_options_init' );
 add_action( 'admin_menu', 'theme_options_add_page' );
 
 /**
- * Init plugin options to white list our options
+ * Init plugin options to white list our options ОБЯЗАТЕЛЬНО
  */
 function theme_options_init(){
 	register_setting( 'sample_options', 'sample_theme_options', 'theme_options_validate' );
 }
 
 /**
- * Load up the menu page
+ * Load up the menu page ОБЯЗАТЕЛЬНО ЕСЛИ НУЖНО ИЗМЕНА СТИЛЕЙ
  */
 function theme_options_add_page() {
-	add_theme_page( __( 'Настройки теми', 'sampletheme' ), __( 'Настройки теми', 'sampletheme' ), 'edit_theme_options', 'theme_options', 'theme_options_do_page' );
+	add_theme_page( __( 'ТЕМ ОПШИНС', 'sampletheme' ), __( 'ТЕМ ОПШИНС', 'sampletheme' ), 'edit_theme_options', 'theme_options', 'theme_options_do_page' );
 }
 
 /**
@@ -63,7 +65,7 @@ $radio_options = array(
 );
 
 /**
- * Create the options page
+ * Create the options page СЮДА ТО ЧТО ДОЛЖНО ПРИСУТСТВУВАТЬ В НАСТРОЙКАХ
  */
 function theme_options_do_page() {
 	global $select_options, $radio_options;
@@ -83,7 +85,7 @@ function theme_options_do_page() {
 			<?php settings_fields( 'sample_options' ); ?>
 			<?php $options = get_option( 'sample_theme_options' ); ?>
 
-			<table class="form-table">
+			<table class="form-table">      //ТАБЛИЦА В КОТОРРОЙ НАХОДЯТСЯ НАСТРОЙКИ
 
 				<?php
 				/**
