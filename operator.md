@@ -1,0 +1,3 @@
+post
+menu
+theme options
