@@ -4,3 +4,11 @@
 2)НАЗВАНИЕ И ОПИСАНИЕ САЙТА Которое контролируется с админки, но где оно должно находится?
    <?php get_bloginfo('name'); ?> ИМЯ
    <?php bloginfo('description'); ?> ОПИСАНИЕ
+   
+   
+3)ВИВОД НАЗВАНИЯ РУБРИКИ И ОПИСАНИЯ
+   <?php echo get_cat_name(  ) ?> 
+   <?php echo get_cat_description( id ) ?>
+   
+   <?php $idObj = get_category_by_slug('ярлик рубрики'); $id = $idObj->term_id; echo get_cat_name($id) ?> больее правильно
+   
