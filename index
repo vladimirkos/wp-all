@@ -1,1 +1,4 @@
-section 
+1)ВИДЖЕТЫ КАК ПОДКЛЮЧАТЬ
+   <?php dynamic_sidebar('etap4'); ?>
+   
+2)
