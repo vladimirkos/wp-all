@@ -61,7 +61,7 @@ show_admin_bar(false); полное отключение
  /**
  * ЛОГОТИП
  */
-        add_theme_support( 'custom-logo' );
+        
         
         function themeslug_theme_customizer( $wp_customize ) {
         $wp_customize->add_section( 'themeslug_logo_section' , array(
