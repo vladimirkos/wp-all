@@ -22,3 +22,19 @@ show_admin_bar(false); полное отключение
 
 
 
+/**
+ * ВИДЖЕТ(СКОЛЬКО ВИДЖЕТОВ ДОЛЖНО БЫТЬ СТОЬЛЬКО И ЗАРИЕЕСТРИРОВАНО)
+ */
+
+ function etap4_widgets_init() {
+     register_sidebar( array(
+         'name'          => 'епап 4',
+         'id'            => 'etap4',
+         'before_widget' => '',
+         'after_widget'  => '',
+         'before_title'  => '<span class="hidden">',
+         'after_title'   => '</span>',
+     ) );
+ }
+ add_action( 'widgets_init', 'etap4_widgets_init' );
+
