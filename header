@@ -10,8 +10,10 @@
 	//ПЕРЕКЛЮЧАНИЕ ФАЙЛА ЧЕРЕЗ НАСТРОЙКИ В АДМИНКЕ *(thame-options)
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/<?php $options = get_option( 'sample_theme_options' ); echo $options['selectinput']; ?>.min.css">
 	
+	
 	//ПОДКЛЮЧЕНИЕ СТИЛЕЙ
 	<script>loadCSS( "<?php echo get_template_directory_uri(); ?>/css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "<?php bloginfo('template_url'); ?>/css/main.min.css?ver=1.0.0", false, "all" );</script>
 	
 	//ПОДКЛЮЧЕНИЕ КОНСОЛИ WP
 	<?php wp_head(); ?>
