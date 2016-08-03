@@ -57,3 +57,9 @@
  	    }
  	  }
  	
+8)ЛОГОТИП
+     <?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
+	<div class='site-logo'>
+	    <img src='<?php echo esc_url( get_theme_mod( 'themeslug_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
+	</div>
+     <?php endif; ?>
