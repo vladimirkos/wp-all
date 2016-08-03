@@ -86,3 +86,18 @@ show_admin_bar(false); полное отключение
  */
  
     add_theme_support( 'custom-background', $defaults );
+
+
+
+ /**
+ * БЕКГРАУНД HEADER и другое
+ */
+
+    add_theme_support( 'custom-header' );
+    
+    $args = array(
+    	'uploads'       => true,
+      'flex-width'    => true,
+      'flex-height'    => true,
+    );
+    add_theme_support( 'custom-header', $args );
