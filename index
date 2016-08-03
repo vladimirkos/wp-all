@@ -39,6 +39,8 @@
         wp_get_attachment_image_src(get_post_thumbnail_id(), 'large'); открив фото миниатюри в большом розмере
 	echo get_post_meta( get_the_ID(), 'ярлик произвольного поля', true );  произвольно поле
 	the_date('Y-m-d', $before, $after, $echo ); выводит дату
+	the_permalink(); cилка на повну запись
+	the_tegs(); виводить теги которые есть
 		
             <?php endwhile; ?>
                 <!--  post-navigation-->
