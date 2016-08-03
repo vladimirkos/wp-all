@@ -37,4 +37,12 @@ show_admin_bar(false); полное отключение
      ) );
  }
  add_action( 'widgets_init', 'etap4_widgets_init' );
+ 
+ 
+ 
+ 
+ /**
+ * ПОДКЛЮЧЕНИ ФАЙЛА КОТОРЫЙ ОТВЕЧАЕТ ЗА НАСТРОЙКИ И УПРАВЛЕНИЕ НЕКГОТОРРЫМЫ АСПЕКТАМИ ТЕМЫ
+ */
+ require_once ( get_stylesheet_directory() . '/theme-options.php' );
 
