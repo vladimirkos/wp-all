@@ -77,3 +77,12 @@ show_admin_bar(false); полное отключение
         ) ) );
         }
         add_action('customize_register', 'themeslug_theme_customizer');
+
+
+
+
+ /**
+ * БЕКГРАУНД САЙТА ЦВЕТ И ИЗОБРАЖЕНИЕ
+ */
+ 
+    add_theme_support( 'custom-background', $defaults );
