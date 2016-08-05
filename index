@@ -50,6 +50,7 @@
 	the_category(); 
 	the_time()  дата публикацыи
 	comments_link(); Выводит на ссылку (URL) на форму комментирования текущей статьи.
+	comments_number($zero, $one, $more); вывод количеств коментов
 		
             <?php endwhile; ?>
                 <!--  post-navigation-->
