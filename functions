@@ -17,6 +17,9 @@ function wpdocs_theme_name_scripts() {
     
     wp_deregister_script( 'script-name' ); отключение скиплп или стиля
     wp_deregister_style( 'style-name' );
+    
+    
+    wp_enqueue_script('script-name', get_template_directory_uri() . '/js/loader-foot.js', array(), null, true); в футер
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 
