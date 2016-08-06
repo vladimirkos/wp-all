@@ -21,4 +21,14 @@
 <body>
 	<header>
 	
+	//ФОРМА ПОИСКА
+		<form class="search" action="" method="post">
+			<input type="search" name="s" value="" />
+			<input type="submit" name="ok" value="ok" />
+		</form>
+	
+	
+	
+	
+	
 	</header>
