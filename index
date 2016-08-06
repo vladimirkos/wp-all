@@ -47,7 +47,7 @@
 	the_date('Y-m-d', $before, $after, $echo ); выводит дату
 	the_permalink(); cилка на повну запись
 	the_tegs(); виводить теги которые есть
-	the_category(); 
+	the_category(); Выводит ссылки на рубрики к которым принадлежит пост.
 	the_time()  дата публикацыи
 	comments_link(); Выводит на ссылку (URL) на форму комментирования текущей статьи.
 	comments_number($zero, $one, $more); вывод количеств коментов
