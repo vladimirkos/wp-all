@@ -1,31 +1,46 @@
 <?php get_header(); ?>
-<section class="insider">
+<section class="my_work">
   <div class="container">
     <div class="row">
+      <h2>По запросу "<?php echo strip_tags($s); ?>" найдено: <?php $search_count = 0; $search = new WP_Query("s=$s & showposts=-1"); if($search->have_posts()) : while($search->have_posts()) : $search->the_post(); $search_count++; endwhile; endif; echo $search_count;?> результатов</h2>
+    </div>
+    <div class="row">
       <div class="col-md-12">
+          <div class="fin_worc">
+
+            <form class="search" action="" method="post">
+              <input type="search" name="s" value="" />
+              <input type="submit" name="ok" value="ok" />
+            </form>
+
+
 
         <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
-            <h2><?php the_title(); ?></h2>
-
-            <?php the_content(); ?>
-
-
-              <?php the_tags(); ?>
+          <div class="project">
+            <div class="photo_prog">
+              <?php the_post_thumbnail(full); ?>
+              <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+            <a href="<?php echo get_post_meta( get_the_ID(), 'link', true ); ?>" target='_blank'  class="button" title="<?php the_title(); ?>">Посмотреть</a>
+          </div>
 
       <?php endwhile; ?>
 
-          <!--  post-navigation-->
+
 
       <?php else: ?>
-
+      диана каже шо не хоче в жопу и в рот тоже не хоче а може в пизду не сильно
       <!--post-faund-->
 
       <?php endif; ?>
 
 
-      </div>
 
+
+          </div>
+      </div>
     </div>
 
   </div>
