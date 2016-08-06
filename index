@@ -68,6 +68,9 @@
  	   	echo ' ' . $tag->name;
  	    }
  	  }
+ 	  
+ 	  
+     цето чтооб виводило все теги	  the_tags('tags:', ' '); виводить теги которые есть
  	
 8)ЛОГОТИП
      <?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
