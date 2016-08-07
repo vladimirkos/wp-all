@@ -11,6 +11,10 @@
             <?php the_content(); ?>
 
 
+              <?php the_tags(); ?>
+
+
+              
 
       <?php endwhile; ?>
 
@@ -22,7 +26,8 @@
 
       <?php endif; ?>
 
-
+<?php previous_posts_link( $label , $max_pages ); ?> Силка на предидуший пост
+<?php next_posts_link( $label , $max_pages ); ?> Силка на следующий пост
       </div>
 
     </div>
@@ -30,3 +35,4 @@
   </div>
 </section>
 <?php get_footer(); ?>
+
