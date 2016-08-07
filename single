@@ -28,6 +28,32 @@
 
 <?php previous_posts_link( $label , $max_pages ); ?> Силка на предидуший пост
 <?php next_posts_link( $label , $max_pages ); ?> Силка на следующий пост
+
+
+// если предедущих записей нет оно будет просать на последню тоисть будет круг по цыклу
+<?php if( get_adjacent_post(false, '', true) ) { 
+previous_post_link('<p>%link</p>');
+}
+else { 
+$first = new WP_Query('posts_per_page=1&order=DESC');
+$first->the_post();
+echo '<a href="' . get_permalink() . '"><p>Первая запись</p></a>';
+wp_reset_postdata();
+};  ?>
+
+
+<?php if( get_adjacent_post(false, '', false) ) { 
+next_post_link('<p>%link</p>');
+}
+else { 
+$last = new WP_Query('posts_per_page=1&order=ASC');
+$last->the_post();
+echo '<a href="' . get_permalink() . '"><p>Последняя запись</p></a>';
+wp_reset_postdata();
+};  ?>
+
+
+
       </div>
 
     </div>
