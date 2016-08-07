@@ -54,6 +54,24 @@ wp_reset_postdata();
 
 
 
+
+/**
+* Комментарии
+*/
+
+<div class="row">
+      <div class="col-md-12">
+
+    <?php comments_template(); ?>
+
+
+      </div>
+
+    </div>
+
+
+
+
       </div>
 
     </div>
