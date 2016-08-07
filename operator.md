@@ -68,6 +68,7 @@
 15)Поиск
     а)search
     б)index(header)
+    в)searchform
 
 16)Создание страницы
     а)page.php
