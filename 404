@@ -1,0 +1,17 @@
+<?php get_header(); ?>
+<section class="insider">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+				<h2>404</h2>
+        <p>
+          Страницы к сожелению не существует, поетому пуска Диана даст в попку но не глубоко
+        </p>
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+<?php get_footer(); ?>
