@@ -72,3 +72,8 @@
 16)Создание страницы
     а)page.php
     б)
+
+17)Коментарии
+    а)comments
+    б)functions
+    в)single
